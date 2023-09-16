@@ -22,7 +22,7 @@ type managerSvcImpl struct {
 // WithTx implements repository.ManagerRepository.
 
 
-func NewRepository(db *gorm.DB) repository.ManagerRepository {
+func NewManagerRepository(db *gorm.DB) repository.ManagerRepository {
 	return &managerSvcImpl{
 		db: db,
 	}
